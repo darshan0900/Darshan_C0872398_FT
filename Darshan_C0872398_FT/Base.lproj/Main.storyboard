@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="128" translatesAutoresizingMaskIntoConstraints="NO" id="lpk-py-bld">
-                                <rect key="frame" x="0.0" y="167" width="393" height="566"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="lpk-py-bld">
+                                <rect key="frame" x="0.0" y="145.66666666666663" width="393" height="630"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="48" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7V-aN-CEQ">
                                         <rect key="frame" x="144" y="0.0" width="105" height="110"/>
@@ -26,7 +26,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="fY7-Qb-1E7">
-                                        <rect key="frame" x="150" y="238" width="93.333333333333314" height="156"/>
+                                        <rect key="frame" x="150" y="174.00000000000003" width="93.333333333333314" height="155.99999999999997"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go5-O8-8JB">
                                                 <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="54"/>
@@ -50,8 +50,15 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="25X-x4-wC7">
+                                        <rect key="frame" x="132.66666666666666" y="394" width="127.99999999999997" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="b9c-m2-Q8g"/>
+                                            <constraint firstAttribute="height" constant="128" id="dgA-8j-ChC"/>
+                                        </constraints>
+                                    </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vhQ-jX-P1v">
-                                        <rect key="frame" x="60" y="522" width="273.33333333333331" height="44"/>
+                                        <rect key="frame" x="60" y="586" width="273.33333333333331" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oaw-HI-Is0">
                                                 <rect key="frame" x="0.0" y="0.0" width="132.66666666666666" height="44"/>
@@ -83,13 +90,14 @@
                         <viewLayoutGuide key="safeArea" id="oEO-ia-wXg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="lpk-py-bld" firstAttribute="centerY" secondItem="oEO-ia-wXg" secondAttribute="centerY" id="Fbu-hS-Mqn"/>
                             <constraint firstItem="lpk-py-bld" firstAttribute="leading" secondItem="oEO-ia-wXg" secondAttribute="leading" id="SxC-0T-Vr0"/>
                             <constraint firstItem="oEO-ia-wXg" firstAttribute="trailing" secondItem="lpk-py-bld" secondAttribute="trailing" id="rfp-PD-QBh"/>
-                            <constraint firstItem="lpk-py-bld" firstAttribute="top" secondItem="oEO-ia-wXg" secondAttribute="top" constant="64" id="xpL-N0-W27"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ojx-o7-7uM"/>
                     <connections>
+                        <outlet property="imageLabel" destination="25X-x4-wC7" id="3IZ-fj-fBk"/>
                         <outlet property="numberLabel" destination="c7V-aN-CEQ" id="kwb-3H-adg"/>
                     </connections>
                 </viewController>

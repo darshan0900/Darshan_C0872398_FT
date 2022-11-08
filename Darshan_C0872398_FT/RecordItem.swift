@@ -8,6 +8,7 @@
 import Foundation
 
 struct RecordItem{
-	let number: String
-	let flag: Bool
+	let number: Int
+	let isEven: Bool
+	let isCorrect: Bool
 }

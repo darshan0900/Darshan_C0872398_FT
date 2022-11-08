@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		556210BD2919D3710021E82C /* RecordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556210BC2919D3710021E82C /* RecordItem.swift */; };
+		556210BF2919D3C70021E82C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556210BE2919D3C70021E82C /* Helper.swift */; };
 		55708F782919CCDD0083E2DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55708F772919CCDD0083E2DB /* AppDelegate.swift */; };
 		55708F7A2919CCDD0083E2DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55708F792919CCDD0083E2DB /* SceneDelegate.swift */; };
-		55708F7C2919CCDD0083E2DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55708F7B2919CCDD0083E2DB /* ViewController.swift */; };
+		55708F7C2919CCDD0083E2DB /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55708F7B2919CCDD0083E2DB /* GameScreen.swift */; };
 		55708F7F2919CCDD0083E2DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55708F7D2919CCDD0083E2DB /* Main.storyboard */; };
 		55708F812919CCDE0083E2DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55708F802919CCDE0083E2DB /* Assets.xcassets */; };
 		55708F842919CCDE0083E2DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55708F822919CCDE0083E2DB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		556210BC2919D3710021E82C /* RecordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordItem.swift; sourceTree = "<group>"; };
+		556210BE2919D3C70021E82C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		55708F742919CCDD0083E2DB /* Darshan_C0872398_FT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Darshan_C0872398_FT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55708F772919CCDD0083E2DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55708F792919CCDD0083E2DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55708F7B2919CCDD0083E2DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55708F7B2919CCDD0083E2DB /* GameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreen.swift; sourceTree = "<group>"; };
 		55708F7E2919CCDD0083E2DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55708F802919CCDE0083E2DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55708F832919CCDE0083E2DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,13 +60,15 @@
 		55708F762919CCDD0083E2DB /* Darshan_C0872398_FT */ = {
 			isa = PBXGroup;
 			children = (
+				556210BC2919D3710021E82C /* RecordItem.swift */,
 				55708F772919CCDD0083E2DB /* AppDelegate.swift */,
 				55708F792919CCDD0083E2DB /* SceneDelegate.swift */,
-				55708F7B2919CCDD0083E2DB /* ViewController.swift */,
+				55708F7B2919CCDD0083E2DB /* GameScreen.swift */,
 				55708F7D2919CCDD0083E2DB /* Main.storyboard */,
 				55708F802919CCDE0083E2DB /* Assets.xcassets */,
 				55708F822919CCDE0083E2DB /* LaunchScreen.storyboard */,
 				55708F852919CCDE0083E2DB /* Info.plist */,
+				556210BE2919D3C70021E82C /* Helper.swift */,
 			);
 			path = Darshan_C0872398_FT;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55708F7C2919CCDD0083E2DB /* ViewController.swift in Sources */,
+				55708F7C2919CCDD0083E2DB /* GameScreen.swift in Sources */,
+				556210BD2919D3710021E82C /* RecordItem.swift in Sources */,
+				556210BF2919D3C70021E82C /* Helper.swift in Sources */,
 				55708F782919CCDD0083E2DB /* AppDelegate.swift in Sources */,
 				55708F7A2919CCDD0083E2DB /* SceneDelegate.swift in Sources */,
 			);

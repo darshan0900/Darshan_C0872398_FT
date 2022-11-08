@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		556210BD2919D3710021E82C /* RecordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556210BC2919D3710021E82C /* RecordItem.swift */; };
 		556210BF2919D3C70021E82C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556210BE2919D3C70021E82C /* Helper.swift */; };
+		556210C12919DC070021E82C /* RecordItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556210C02919DC070021E82C /* RecordItemCell.swift */; };
+		556210C32919DC590021E82C /* RecordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556210C22919DC590021E82C /* RecordScreen.swift */; };
 		55708F782919CCDD0083E2DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55708F772919CCDD0083E2DB /* AppDelegate.swift */; };
 		55708F7A2919CCDD0083E2DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55708F792919CCDD0083E2DB /* SceneDelegate.swift */; };
 		55708F7C2919CCDD0083E2DB /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55708F7B2919CCDD0083E2DB /* GameScreen.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		556210BC2919D3710021E82C /* RecordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordItem.swift; sourceTree = "<group>"; };
 		556210BE2919D3C70021E82C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		556210C02919DC070021E82C /* RecordItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordItemCell.swift; sourceTree = "<group>"; };
+		556210C22919DC590021E82C /* RecordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordScreen.swift; sourceTree = "<group>"; };
 		55708F742919CCDD0083E2DB /* Darshan_C0872398_FT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Darshan_C0872398_FT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55708F772919CCDD0083E2DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55708F792919CCDD0083E2DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				55708F822919CCDE0083E2DB /* LaunchScreen.storyboard */,
 				55708F852919CCDE0083E2DB /* Info.plist */,
 				556210BE2919D3C70021E82C /* Helper.swift */,
+				556210C02919DC070021E82C /* RecordItemCell.swift */,
+				556210C22919DC590021E82C /* RecordScreen.swift */,
 			);
 			path = Darshan_C0872398_FT;
 			sourceTree = "<group>";
@@ -149,6 +155,8 @@
 				556210BF2919D3C70021E82C /* Helper.swift in Sources */,
 				55708F782919CCDD0083E2DB /* AppDelegate.swift in Sources */,
 				55708F7A2919CCDD0083E2DB /* SceneDelegate.swift in Sources */,
+				556210C12919DC070021E82C /* RecordItemCell.swift in Sources */,
+				556210C32919DC590021E82C /* RecordScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

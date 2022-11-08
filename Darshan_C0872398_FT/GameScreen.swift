@@ -12,6 +12,9 @@ class GameScreen: UIViewController {
 	@IBOutlet weak var numberLabel: UILabel!
 	@IBOutlet weak var imageLabel: UIImageView!
 	
+	@IBOutlet weak var resetBtn: UIButton!
+	@IBOutlet weak var historyBtn: UIButton!
+	
 	private var records: [RecordItem] = []
 	
 	override func viewDidLoad() {
@@ -19,6 +22,14 @@ class GameScreen: UIViewController {
 		// Do any additional setup after loading the view.
 		
 		nextGame()
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		
+		if imageLabel.image != nil{
+			nextGame()
+		}
 	}
 	
 	@IBAction func onEvenPress(_ sender: UIButton) {
@@ -33,7 +44,7 @@ class GameScreen: UIViewController {
 		if let number = Int(numberLabel.text!) {
 			let isNumberEven = number % 2 == 0
 			let isCorrect = isNumberEven == isUserResponseEven
-			records.append(RecordItem(number: number, isEven: isNumberEven, isCorrect: isCorrect))
+			records.append(RecordItem(number: number, isUserResponseEven: isUserResponseEven, isCorrect: isCorrect))
 			var title = ""
 			var message = ""
 			if isCorrect{
@@ -61,20 +72,33 @@ class GameScreen: UIViewController {
 	}
 	
 	@IBAction func onHistoryPress(_ sender: UIButton) {
+		showHistory()
 	}
 	
 	func nextGame() {
 		imageLabel.image = nil
 		numberLabel.text = String(generateRandomNumber())
+		if records.count <= 0 {
+			resetBtn.isEnabled = false
+			historyBtn.isEnabled = false
+		} else {
+			resetBtn.isEnabled = true
+			historyBtn.isEnabled = true
+		}
 	}
 
 	func resetGame() {
 		generatedNumbers.removeAll()
 		records.removeAll()
+		nextGame()
 	}
 	
 	func showHistory() {
-		
+		let storyboard = UIStoryboard(name: "Main", bundle: nil)
+		if let screen = storyboard.instantiateViewController(withIdentifier: "RecordScreen") as? RecordScreen{
+			screen.data = records
+			navigationController?.pushViewController(screen, animated: true)
+		}
 	}
 	
 	func showAlert(title: String, message: String, actions: [UIAlertAction]) {

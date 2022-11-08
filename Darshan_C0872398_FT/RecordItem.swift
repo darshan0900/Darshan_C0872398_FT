@@ -9,6 +9,6 @@ import Foundation
 
 struct RecordItem{
 	let number: Int
-	let isEven: Bool
+	let isUserResponseEven: Bool
 	let isCorrect: Bool
 }

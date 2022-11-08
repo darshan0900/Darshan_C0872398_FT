@@ -44,7 +44,7 @@ class GameScreen: UIViewController {
 		if let number = Int(numberLabel.text!) {
 			let isNumberEven = number % 2 == 0
 			let isCorrect = isNumberEven == isUserResponseEven
-			records.append(RecordItem(number: number, isUserResponseEven: isUserResponseEven, isCorrect: isCorrect))
+			records.insert(RecordItem(number: number, isUserResponseEven: isUserResponseEven, isCorrect: isCorrect), at: 0)
 			var title = ""
 			var message = ""
 			if isCorrect{
@@ -57,7 +57,7 @@ class GameScreen: UIViewController {
 				message = "Your answer is wrong. Correct ans is \(correctAns)"
 				imageLabel.image = UIImage(named: "incorrect")
 			}
-			let nextGameAction = UIAlertAction(title: "Next Game", style: .default){ _ in
+			let nextGameAction = UIAlertAction(title: "Play Again", style: .default){ _ in
 				self.nextGame()
 			}
 			let showProgressAction = UIAlertAction(title: "Show Progress", style: .default){ _ in

@@ -45,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		556210C42919DFFA0021E82C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55708F7B2919CCDD0083E2DB /* GameScreen.swift */,
+				556210C02919DC070021E82C /* RecordItemCell.swift */,
+				556210C22919DC590021E82C /* RecordScreen.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		556210C52919E00D0021E82C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				556210BC2919D3710021E82C /* RecordItem.swift */,
+				556210BE2919D3C70021E82C /* Helper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		55708F6B2919CCDD0083E2DB = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +83,14 @@
 		55708F762919CCDD0083E2DB /* Darshan_C0872398_FT */ = {
 			isa = PBXGroup;
 			children = (
-				556210BC2919D3710021E82C /* RecordItem.swift */,
+				556210C52919E00D0021E82C /* Model */,
+				556210C42919DFFA0021E82C /* Controller */,
 				55708F772919CCDD0083E2DB /* AppDelegate.swift */,
 				55708F792919CCDD0083E2DB /* SceneDelegate.swift */,
-				55708F7B2919CCDD0083E2DB /* GameScreen.swift */,
 				55708F7D2919CCDD0083E2DB /* Main.storyboard */,
 				55708F802919CCDE0083E2DB /* Assets.xcassets */,
 				55708F822919CCDE0083E2DB /* LaunchScreen.storyboard */,
 				55708F852919CCDE0083E2DB /* Info.plist */,
-				556210BE2919D3C70021E82C /* Helper.swift */,
-				556210C02919DC070021E82C /* RecordItemCell.swift */,
-				556210C22919DC590021E82C /* RecordScreen.swift */,
 			);
 			path = Darshan_C0872398_FT;
 			sourceTree = "<group>";
@@ -306,6 +322,7 @@
 				DEVELOPMENT_TEAM = L9Z24WLH63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Darshan_C0872398_FT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Oddly Even";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,6 +351,7 @@
 				DEVELOPMENT_TEAM = L9Z24WLH63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Darshan_C0872398_FT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Oddly Even";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
